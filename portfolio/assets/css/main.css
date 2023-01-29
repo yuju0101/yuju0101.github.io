@@ -2336,7 +2336,7 @@ img {
 }
 
 .p-fro {
-  padding: 16pt 32pt;
+  padding: 16px 32px;
   background-color: #EFEFEF;
 }
 
@@ -2345,7 +2345,7 @@ img {
 }
 
 .p-top h3, .p-top span {
-  font-size: 80px !important;
+  font-size: 80px;
   color: #222222;
   letter-spacing: -.5px;
   line-height: 1.2;
@@ -2371,12 +2371,16 @@ img {
   z-index: 1;
 }
 
+.p-fro {
+  padding: 24px;
+}
+
 .p-info {
   margin: 0 5% 1% 5%;
 }
 
 .p-info h3, .p-info span {
-  font-size: 100px !important;
+  font-size: 100px;
   color: #222222;
   letter-spacing: -2px;
   line-height: 1.2;
@@ -2548,6 +2552,18 @@ img {
   }
   .p-content__title p {
     font-size: 1rem;
+  }
+  .p-info h3 {
+    font-size: 2.5rem;
+  }
+  .p-info h3 span {
+    font-size: 2.5rem;
+  }
+  .p-top h3 {
+    font-size: 2.5rem;
+  }
+  .p-top h3 span {
+    font-size: 2.5rem;
   }
   .sort {
     padding-top: 7.5rem;
