@@ -87,78 +87,159 @@
 	</div>
 	<!-- menu end -->
 
-	<!-- info start	-->
-	<section class="p-info" id="top">
+	<!-- tab group -->
+	<section class="p-tabgroup">
 		<div class="container">
 			<div class="row">
-				<h3 class="col-md-12 col-12">
-					<span></span>
-					Hey!<br class="br-mo"> I'm Yuju
-				</h3>
-				<div class="col-md-4 col-12 mb-3">
-					<p class="p-info__text">
-						我擁有7年平面設計與數位設計經驗，曾在出版、遊戲、媒體等領域服務。
-						我致力於為人們創造出更好用、更愉悅，以及更有價值的設計。
-					</p>
-				</div>
-				<div class="col-md-6 col-12"></div>
-				<a href="intro.html" class="col-md-12 col-12">
-					<div class="btn-normal">
-						<p>More about me</p>
+				<ul class="col-12 nav nav-pills mb-3 p-tabgroup__pills" id="pills-tab" role="tablist">
+					<li class="nav-item col-12 col-md-2">
+						<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" 
+						role="tab" aria-controls="pills-home" aria-selected="true">
+						Digital Design
+					</a>
+					</li>
+					<li class="nav-item col-12 col-md-2">
+						<a class="nav-link" id="pills-pd-tab" data-toggle="pill" href="#pills-pd" 
+						role="tab" aria-controls="pills-pd" aria-selected="false">
+						Print Design
+					</a>
+					</li>
+					<li class="nav-item col-12 col-md-2">
+						<a class="nav-link" id="pills-gd-tab" data-toggle="pill" href="#pills-gd" 
+						role="tab" aria-controls="pills-gd" aria-selected="false">
+						Visual Design
+					</a>
+					</li>
+				</ul>
+				<!-- Digital Design -->
+				<div class="col-12 tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<div class="conatainer">
+							<div class="row">
+								<a href="pages/illustration/014.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/14.jpg" alt="風格經濟學院電子報">
+									</div>
+								</a>
+								<a href="pages/digital/003.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d3.jpg" alt="數位人才在哪裡">
+									</div>
+								</a>
+								<a href="pages/digital/004.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d4.jpg" alt="前進竹科：揭開半導體工程師的苦與樂">
+									</div>
+								</a>
+								<a href="pages/digital/005.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d5.jpg" alt="解密：頂級服務現場">
+									</div>
+								</a>
+								<a href="pages/digital/006.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d6.jpg" alt="Cycling：自行車網站">
+									</div>
+								</a>
+								<a href="pages/digital/007.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d7.jpg" alt="國際書展活動頁">
+									</div>
+								</a>
+							</div>
+						</div>
 					</div>
-				</a>
-			</div>
-			<div class="imgWrap img-index">
-				<img src="assets/images/btn-toTop.png" alt="down" class="downbtn">
+					<!-- Print Design -->
+					<div class="tab-pane fade" id="pills-pd" role="tabpanel" aria-labelledby="pills-pd-tab">
+						<div class="conatainer">
+							<div class="row">
+								<a href="pages/illustration/001.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/1.jpg" alt="高效經理人的管理備忘錄">
+									</div>
+								</a>
+								<a href="pages/illustration/002.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/2.jpg" alt="我的財富自由手冊">
+									</div>
+								</a>
+								<a href="pages/illustration/003.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/3.jpg" alt="她們創業的那些鳥事製作全紀錄">
+									</div>
+								</a>
+								<a href="pages/illustration/004.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/4.jpg" alt="提姆．庫克">
+									</div>
+								</a>
+								<a href="pages/illustration/015.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/15.jpg" alt="提姆．庫克">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Visual Design -->
+					<div class="tab-pane fade" id="pills-gd" role="tabpanel" aria-labelledby="pills-gd-tab">
+						<div class="conatainer">
+							<div class="row">
+								<a href="pages/illustration/012.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/12.jpg" alt="來聊天Bar活動製作物">
+									</div>
+								</a>
+								<a href="pages/illustration/006.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/6.jpg" alt="2020品牌數位好感度調查">
+									</div>
+								</a>
+								<a href="pages/illustration/013.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/13.jpg" alt="桃園市政成果刊物標案">
+									</div>
+								</a>
+								<a href="pages/illustration/007.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/7.jpg" alt="台灣人才白皮書">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
 	</section>
-	<!-- info end	-->
 
 
-	<!-- list start -->
-	<section class="p-top" id="top">
-		<h3 class="text-center">featured <span>works</span></h3>
+
+
+	
+	
+	<!-- footer start -->
+	<footer class="footer">
 		<div class="container">
-			<div class="row justify-content-center mb-3">
-				<a class="col-md-5 col-12 p-top__work" href="pages/digital/001.html">
-					<div class="imgWrap mb-2">
-						<img src="assets/images/works/d1-cover.jpg" alt="21天主管新手村">
-					</div>
-					<h5>21天主管新手村</h5>
-					<h6>Digital experience <span>2022</span></h6>
-				</a>
-				<a class="col-md-5 col-12 p-top__work" href="pages/digital/002.html">
-					<div class="imgWrap mb-2">
-						<img src="assets/images/works/d2-cover.jpg" alt="Green share：分送植物生命的美好">
-					</div>
-					<h5>Green share：分送植物生命的美好</h5>
-					<h6>Digital experience <span>2022</span></h6>
-				</a>
-				<a class="col-md-5 col-12 p-top__work" href="pages/digital/004.html">
-					<div class="imgWrap mb-2">
-						<img src="assets/images/works/d4-cover.jpg" alt="前進竹科：揭開半導體工程師的苦與樂">
-					</div>
-					<h5>前進竹科：揭開半導體工程師的苦與樂</h5>
-					<h6>Digital experience <span>2022</span></h6>
-				</a>
-				<a class="col-md-5 col-12 p-top__work" href="#">
-					<div class="imgWrap mb-2">
-						<img src="assets/images/works/12-cover.jpg" alt="來聊天Bar活動">
-					</div>
-					<h5>來聊天Bar活動</h5>
-					<h6>Visual design <span>2021</span></h6>
-				</a>
-			</div>
-			<a href="works.html">
-				<div class="btn-normal col-md-5 col-12">
-					<p class="text-center">More works</p>
+			<div class="row justify-content-between">
+				<div class="col-12">
+					<a href="mailto:chobitsjay@gmail.com">
+						<i class="fa-solid fa-envelope fa-xl"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/weng-lauren-tw/" target="_blank">
+						<i class="fa-brands fa-linkedin-in fa-xl"></i>
+					</a>
+					<a href="https://www.behance.net/LaurenWeng" target="_blank">
+						<i class="fa-brands fa-behance fa-xl"></i>
+					</a>
 				</div>
-			</a>
+				<div class="col-12">
+					<p class="col-12">Copyright &copy; 2023 YUJU</p>
+				</div>
+			</div>
 		</div>
-	</section>
-	<!-- list end -->
+	</footer>
+	<!-- footer end -->
 
 
 	<!-- include page js source -->
