@@ -1,0 +1,100 @@
+/*---------- color ----------*/
+
+// text color
+.color {
+    &--white {
+        color: $white !important;
+    }
+    
+    &--black {
+        color: $black !important;
+    }
+
+    // theme
+
+    &--main{
+        color: $primary !important;
+    }
+    
+    &--info{
+        color: $info !important;
+    }
+
+    &--secondary{
+        color: $secondary !important;
+    }
+
+    &--warning{
+        color: $warning !important;
+    }
+
+    &--danger {
+        color: $danger !important;
+
+    }
+
+}
+
+// bg color
+.bg {
+    &--light {
+        background-color: $gray-normal !important;
+    }
+
+    &--dark {
+        background-color: $black !important;
+    }
+
+    &--gray {
+        background-color: $gray !important;
+    }
+
+    &--gray100 {
+        background-color: $gray-100 !important;
+    }
+
+    &--gray200 {
+        background-color: $gray-200 !important;
+    }
+
+
+    &--white {
+        background-color: $white !important;
+    }
+
+    // theme
+    &--main{
+    background-color: $primary !important;
+    }
+
+    &--main-l{
+        background-color: $primary-lighter !important;
+    }
+
+    &--secondary{
+    background-color: $secondary !important;
+    }
+
+    &--secondary-l{
+        background-color: $secondary-lighter !important;
+    }
+
+    &--info{
+        background-color: $info !important;
+    }
+            
+    &--warning{
+        background-color: $warning !important;
+    }
+}
+
+//shadow
+.shadow{
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+//txt
+.txt--b{
+    font-weight: 700;
+}
+

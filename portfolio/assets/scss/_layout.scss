@@ -1,0 +1,196 @@
+@import '_mixin';
+@import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Noto Sans TC','Helvetica Neue','Roboto','Microsoft JhengHei',Arial,sans-serif;
+    font-weight: 300;
+    color: $gray;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+section {
+	padding: 5.6rem 0;
+
+    @include rwd-max(565px) {
+        padding: 2.6rem 0;
+    }
+}
+
+h1, h2, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    line-height: 1.85;
+}
+
+h1 {
+    @include font( 50px,1.3,500);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+    
+h2 {
+    @include font( rem(30),1.3,500);
+}
+    
+h3 {
+    @include font( rem(24),1.3,500);
+}
+    
+h4 {
+    @include font( rem(20),1.5,500);
+    padding: 8px 0;
+}
+    
+h5 {
+    @include font( rem(18),1.8,500);
+}
+
+h6 {
+    @include font( 12px,1.6,300);
+    letter-spacing: .5px;
+}
+    
+p,ul {
+    @include font( 18px,1.85,400);
+    margin-bottom: 0;
+    padding: 8px 0;
+    letter-spacing: .3px;
+}
+    
+a {
+    text-decoration: none;
+    @include font( 18px,1.85,300);
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+        color: $primary;
+    }
+
+}
+
+.a__disable{
+    cursor: default !important;
+}
+
+strong {
+    font-weight: 500;
+}
+
+blockquote {
+    @include font( 24px,1.5,500);
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 1.85;
+    font-size: 18px;
+}
+    
+button {
+    outline: none;
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    outline: none;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*---------- layouts ----------*/
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+/*---------- footer ----------*/
+.footer {
+    text-align: center;
+    padding: 50px;
+    background-color: $gray;
+    color: $black;
+    font-size: 12px;
+
+    a,span {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    a:hover {
+        color: $primary;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.2;
+        color: $black;
+        margin-bottom: .25rem;
+        font-weight: 300;
+    }
+
+    &__co {
+        width: 150px;
+    }
+}
+
+//mfp iframe not overflow to show close btn
+.mfp-iframe-scaler {
+    overflow: unset;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1280px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: rem(30);
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .container, .container-sm {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

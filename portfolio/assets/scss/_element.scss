@@ -1,0 +1,39 @@
+
+/*---------- buttons ----------*/
+
+.btn{
+    &-normal{
+        padding: 8px 24px;
+        background-color: $primary;
+        display: inline-block;
+        border-radius: 4px;
+        cursor: pointer;
+        p{
+            font-size: rem(16);
+            font-weight: 300;
+            padding: 0;
+            color: $white;
+        }
+
+        @include rwd-min(1200px) {
+            background-color: $primary-lighter;
+            p{
+                color: $black;
+            }
+            &:hover{
+                background-color: $primary;
+                p{
+                    color: $white;
+                }
+            }
+        }
+
+    }
+}
+
+.btnGroup{
+    position: fixed;
+    right: 0;
+    padding: 24px;
+}
+
