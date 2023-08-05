@@ -30,9 +30,9 @@
 <body data-spy="scroll" data-target=".navbar-collapse">
 
 	<!-- toTop button -->
-	<button type="button" id="toTop" class="toTop">
+	<a href="javascript:void(0);" id="backToTop" class="back-to-top">
 		<img src="../../assets/images/btn-toTop.png" alt="toTop">
-	</button>
+	</a>
 	<!-- toTop button end -->
 
 	<!-- menu button -->
@@ -157,39 +157,8 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="./assets/js/bootsnav.js"></script>
-	<script src="./assets/js/video-slider.js"></script>
-	<script src="./assets/js/main.js"></script>
-
-	<script>
-		//toTop Button
-		$(window).scroll(function(){
-            last=$('body').height()-$(window).height()-200
-            if($(window).scrollTop()>=last){
-				$('#toTop').fadeOut(222)();
-            } else if ($(this).scrollTop()<100){
-				$('#toTop').fadeOut(222)();
-			} else {
-				$('#toTop').fadeIn(222)();
-			}
-        });
-
-		//openMenu Button
-		$(function () {
-			$('#openMenu').click(function(){
-				$('#menuPage').css("visibility","visible");
-				$('.close-button').css("visibility","visible");
-			});
-		});
-
-		//menuPage Close
-		$(function () {
-			$('.close-button').click(function(){
-				$('#menuPage').css("visibility","hidden");
-				$('.close-button').css("visibility","hidden");
-			});
-		});
-
-	</script>
+	<script src="../../assets/js/bootsnav.js"></script>
+	<script src="../../assets/js/video-slider.js"></script>
+	<script src="../../assets/js/main.js"></script>
 </body>
 </html>
