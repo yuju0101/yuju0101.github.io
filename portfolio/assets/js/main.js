@@ -3,24 +3,23 @@
 
 
 		//toTop Button
-		$(window).scroll(function(){
-            last=$('body').height()-$(window).height()-50
-            if($(window).scrollTop()>=last){
-				$('#toTop').fadeOut(222)();
-            } else if ($(this).scrollTop()<100){
-				$('#toTop').fadeOut(222)();
-			} else {
-				$('#toTop').fadeIn(222)();
-			}
-        })
+		$(document).ready(function(){
+			var btn = $('#backToTop');
+			$(window).on('scroll', function() {
+				if ($(window).scrollTop() > 300) {
+					btn.addClass('show');
+				} else {
+					btn.removeClass('show');
+				}
+			});
+			btn.on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({
+					scrollTop: 0
+				}, '300');
+			});
+		});
 
-        // $(window).scroll(function(){
-        //     //最後一頁scrollTop=body-window，50是預留空間
-        //     last=$('body').height()-$(window).height()-50
-        //     if($(window).scrollTop()>=last){
-        //     $('#toTop').hide()
-        //     }
-        // })
 
 		//slider
 		$('.responsive--slick').slick({
@@ -67,55 +66,25 @@
 		});
 
 
-		// bottom banner
-		jQuery(document).ready(function () {
-
-			'use strict';
-
-			var c, currentScrollTop = 0,
-				navbar = $('.bottom-b');
-
-			$(window).scroll(function () {
-				var a = $(window).scrollTop();
-				var b = navbar.height();
-
-				currentScrollTop = a;
-
-				if (c < currentScrollTop && a > b + b) {
-					navbar.addClass("scrollUp");
-				} else if (c > currentScrollTop && !(a <= b)) {
-					navbar.removeClass("scrollUp");
-				}
-				c = currentScrollTop;
-			});
-
-		});
-
-
 		//openMenu Button
 		$(function () {
-			$('#openMenu').click(function () {
-				$('html,body').animate({ scrollTop: 0 }, 333);
+			$('#openMenu').click(function(){
+				$('#menuPage').css("visibility","visible");
+				$('.close-button').css("visibility","visible");
 			});
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 300) {
-					$('#openMenu').fadeIn(222);
-				} else {
-					$('#openMenu').stop().fadeOut(222);
-				}
-			}).scroll();
 		});
 
+		//menuPage Close
 		$(function () {
-			//caches a jQuery object containing the header element
-			var header = $(".navbar__bgcustom");
-			$(window).scroll(function () {
-				var scroll = $(window).scrollTop();
+			$('.close-button').click(function(){
+				$('#menuPage').css("visibility","hidden");
+				$('.close-button').css("visibility","hidden");
+			});
+		});
 
-				if (scroll >= 70) {
-					header.addClass("scroll");
-				} else {
-					header.removeClass("scroll");
-				}
+		//top info
+		$(function () {
+			$('.p-top__work').mouseover(function(){
+				$('.p-top__info').toggle().css("visibility","visible");
 			});
 		});
