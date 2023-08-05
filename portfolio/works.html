@@ -29,6 +29,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
+	<!-- toTop button -->
+	<a href="javascript:void(0);" id="backToTop" class="back-to-top">
+		<img src="assets/images/btn-toTop.png" alt="toTop">
+	</a>
+	<!-- toTop button end -->
 	<!-- menu button -->
 	<button type="button" id="openMenu" class="openMenu">
 		<span class="material-symbols-outlined">menu</span>
@@ -116,6 +121,16 @@
 					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 						<div class="conatainer">
 							<div class="row">
+								<a href="pages/digital/001.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d1.jpg" alt="21天主管新手村">
+									</div>
+								</a>
+								<a href="pages/digital/002.html" class="col-md-4 col-12 mb-4">
+									<div class="imgWrap p-tabgroup__img">
+										<img src="assets/images/works/d2.jpg" alt="Green share：分送植物生命的美好">
+									</div>
+								</a>
 								<a href="pages/illustration/014.html" class="col-md-4 col-12 mb-4">
 									<div class="imgWrap p-tabgroup__img">
 										<img src="assets/images/works/14.jpg" alt="風格經濟學院電子報">
@@ -212,11 +227,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
-
-	
 	
 	<!-- footer start -->
 	<footer class="footer">
@@ -249,42 +259,6 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="assets/js/bootsnav.js"></script>
 	<script src="assets/js/video-slider.js"></script>
-
-	<script>
-		//toTop Button
-		$(window).scroll(function(){
-            last=$('body').height()-$(window).height()-50
-            if($(window).scrollTop()>=last){
-				$('#toTop').fadeOut(222)();
-            } else if ($(this).scrollTop()<100){
-				$('#toTop').fadeOut(222)();
-			} else {
-				$('#toTop').fadeIn(222)();
-			}
-        }) 
-
-		//openMenu Button
-		$(function () {
-			$('#openMenu').click(function(){
-				$('#menuPage').css("visibility","visible");
-				$('.close-button').css("visibility","visible");
-			});
-		});
-
-		//menuPage Close
-		$(function () {
-			$('.close-button').click(function(){
-				$('#menuPage').css("visibility","hidden");
-				$('.close-button').css("visibility","hidden");
-			});
-		});
-
-		//top info
-		$(function () {
-			$('.p-top__work').mouseover(function(){
-				$('.p-top__info').toggle().css("visibility","visible");
-			});
-		});
-	</script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

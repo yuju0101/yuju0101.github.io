@@ -29,6 +29,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
+	<!-- toTop button -->
+	<a href="javascript:void(0);" id="backToTop" class="back-to-top">
+		<img src="assets/images/btn-toTop.png" alt="toTop">
+	</a>
+	<!-- toTop button end -->
 	<!-- menu button -->
 	<button type="button" id="openMenu" class="openMenu">
 		<span class="material-symbols-outlined">menu</span>
@@ -143,7 +148,7 @@
 					<h5>前進竹科：揭開半導體工程師的苦與樂</h5>
 					<h6>Digital experience <span>2022</span></h6>
 				</a>
-				<a class="col-md-5 col-12 p-top__work" href="#">
+				<a class="col-md-5 col-12 p-top__work" href="pages/illustration/012.html">
 					<div class="imgWrap mb-2">
 						<img src="assets/images/works/12-cover.jpg" alt="來聊天Bar活動">
 					</div>
@@ -168,42 +173,6 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="assets/js/bootsnav.js"></script>
 	<script src="assets/js/video-slider.js"></script>
-
-	<script>
-		//toTop Button
-		$(window).scroll(function(){
-            last=$('body').height()-$(window).height()-50
-            if($(window).scrollTop()>=last){
-				$('#toTop').fadeOut(222)();
-            } else if ($(this).scrollTop()<100){
-				$('#toTop').fadeOut(222)();
-			} else {
-				$('#toTop').fadeIn(222)();
-			}
-        }) 
-
-		//openMenu Button
-		$(function () {
-			$('#openMenu').click(function(){
-				$('#menuPage').css("visibility","visible");
-				$('.close-button').css("visibility","visible");
-			});
-		});
-
-		//menuPage Close
-		$(function () {
-			$('.close-button').click(function(){
-				$('#menuPage').css("visibility","hidden");
-				$('.close-button').css("visibility","hidden");
-			});
-		});
-
-		//top info
-		$(function () {
-			$('.p-top__work').mouseover(function(){
-				$('.p-top__info').toggle().css("visibility","visible");
-			});
-		});
-	</script>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>
