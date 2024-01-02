@@ -2352,7 +2352,7 @@ img {
 }
 
 .p-tabgroup {
-  padding: 20% 0;
+  padding: 3% 0;
 }
 
 .p-tabgroup__pills li {
@@ -3188,8 +3188,8 @@ body ::selection {
           align-items: center;
   -webkit-transform: translateX(-40px);
           transform: translateX(-40px);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0s ease;
+  transition: 0s ease;
 }
 
 .menuPage__title:hover {
