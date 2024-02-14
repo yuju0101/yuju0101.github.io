@@ -1952,7 +1952,7 @@ img {
 }
 
 .p-info .img-index {
-  margin: 80px 0 0 0 !important;
+  margin: 40px 0 0 0 !important;
 }
 
 .p-info .img-index img {
@@ -2217,6 +2217,11 @@ img {
 
 .p-article__team span {
   font-weight: 500;
+}
+
+.p-article__team .highlight {
+  font-weight: 300;
+  color: #FF6A3C;
 }
 
 .p-article__team p {
